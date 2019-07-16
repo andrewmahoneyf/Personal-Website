@@ -6,7 +6,13 @@ const Card = props => {
   return (
     <div className="card">
       <a href={url} target="_blank" className="cardLink" rel="noopener noreferrer">
-        <img data-src="holder.js/100px280/thumb" alt="100%x280" className="cardImg" src={image} data-holder-rendered="true" />
+        <img
+          data-src="holder.js/100px280/thumb"
+          alt="100%x280"
+          className="cardImg"
+          src={image}
+          data-holder-rendered="true"
+        />
         <p className="card-text">{desc}</p>
       </a>
     </div>

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { IMAGES, FILES } from 'constants/assets';
 import { ROUTES, LINKS } from 'constants/routes';
 
-const Carousel = () => (
+export default () => (
   <section id="top" className="box-shadow">
     <div id="myCarousel" className="carousel slide" data-ride="carousel">
       <ol className="carousel-indicators">
@@ -22,10 +22,21 @@ const Carousel = () => (
                 <i>University of Washington | Michael G. Foster School of Business 2019</i>
               </p>
               <p>
-                <a className="btn btn-lg btn-primary mr-2 box-shadow" href={FILES.resume} role="button" target="_blank" rel="noopener noreferrer">
+                <a
+                  className="btn btn-lg btn-primary mr-2 box-shadow"
+                  href={FILES.resume}
+                  role="button"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Download Resume
                 </a>
-                <a href={LINKS.linkedin} className="btn btn-lg btn-secondary box-shadow" target="_blank" rel="noopener noreferrer">
+                <a
+                  href={LINKS.linkedin}
+                  className="btn btn-lg btn-secondary box-shadow"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   View LinkedIn
                 </a>
               </p>
@@ -36,8 +47,8 @@ const Carousel = () => (
           <img className="second-slide" src={IMAGES.carousel2} alt="Second slide" />
           <div className="container">
             <div className="carousel-caption d-md-block slide2">
-              <h1>Aspiring Software Developer</h1>
-              <p>A business-minded individual with a passion for technology.</p>
+              <h1>Full-Stack Engineer</h1>
+              <p>A business-minded individual with a passion for technology</p>
               <p>
                 <a className="btn btn-lg btn-primary box-shadow" href={ROUTES.about} role="button">
                   Learn more
@@ -72,5 +83,3 @@ const Carousel = () => (
     </div>
   </section>
 );
-
-export default Carousel;

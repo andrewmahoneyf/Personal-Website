@@ -3,13 +3,22 @@ import { LINKS } from './routes';
 
 export const POSITIONS = [
   {
+    company: 'Activision',
+    date: '09/2018 - Present',
+    position: 'Software Engineer',
+    url: 'https://www.activision.com/',
+    image: IMAGES.activision,
+    desc:
+      "Andrew currently works for Activision as an integral member of their online Central Tech team. They focus on live game operations by providing a suite of development tools for Activision's game studios supporting titles such as Call of Duty.",
+  },
+  {
     company: 'Liberty Mutual Insurance',
-    date: '06/2018 - Present',
+    date: '06/2018 - 09/2018',
     position: 'Software Development Intern',
     url: 'https://www.libertymutual.com/',
     image: IMAGES.liberty,
     desc:
-      'Andrew is currently a software development intern at Liberty Mutual working on an agile React development team through their TechStart program. Liberty Mutual is an American diversified global insurer with the fourth-largest property and casualty division in the United States.',
+      'Andrew interned at Liberty Mutual with an agile driven React team through their TechStart program. His team was among one of the earliest React focused teams so they played an important role in advancing the transition through new core components and a design library.',
   },
   {
     company: 'DubDev',
@@ -18,16 +27,16 @@ export const POSITIONS = [
     url: LINKS.dubdev,
     image: IMAGES.DubDevLogoWhite,
     desc:
-      'DubDev is a mobile and web application development company that Andrew founded with his partner James Sanghawk Lee. Their focus is React apps, but they also offer services for several clients with WordPress websites. Their mission is to provide affordable websites for small companies in the Seattle area.',
+      'DubDev is a mobile and web application development company that Andrew founded with his partner James Lee. They focus development on React apps and also offer services for several clients with WordPress websites. Their mission is to provide affordable websites for small companies in the Seattle area.',
   },
   {
     company: 'Coinglomerate LLC.',
-    date: '12/2017 - Present',
+    date: '12/2017 - 09/2018',
     position: 'Co-Founder / Operations Officer',
     url: LINKS.coinglomerate,
     image: IMAGES.coinglomerate,
     desc:
-      'Andrew founded Coinglomerate with a small group of colleagues from the UW Blockchain Society. Coinglomerate offers computation-as-a-service and develops hardware and software mining solutions. Their data-driven focus expands computational power for the highest profits available.',
+      'Andrew founded Coinglomerate with a small group of colleagues from the UW Blockchain Society. Coinglomerate offered computation-as-a-service, developing hardware and software mining solutions. Their data-driven focus expanded computational power for the highest mining profits available.',
   },
   {
     company: 'University of Washington',

@@ -3,7 +3,7 @@ import Scroll from 'react-scroll';
 
 import { LINKS } from 'constants/routes';
 
-const Footer = () => (
+export default () => (
   <div>
     <footer id="footer" className="builder-bg padding-30px-tb xs-padding-30px-tb bg-dark">
       <div className="container-fluid pl-5 pr-5">
@@ -14,13 +14,14 @@ const Footer = () => (
         </p>
         <p>
           <a href={LINKS.phone}>(425) 210-5809</a>
-          <br />{' '}
+        </p>
+        <p>
           <a href={LINKS.gmail} target="_blank" rel="noopener noreferrer">
             andrew.mahoney.f@gmail.com
           </a>
-          <br />{' '}
+        </p>
+        <p>
           <a href={LINKS.uw} target="_blank" rel="noopener noreferrer">
-            {' '}
             drew102@uw.edu / u.washington.edu
           </a>
         </p>
@@ -36,7 +37,7 @@ const Footer = () => (
               <a href={LINKS.facebook} target="_blank" rel="noopener noreferrer">
                 <i className="fa fa-facebook" />
               </a>
-              <a href={LINKS.youtub} target="_blank" rel="noopener noreferrer">
+              <a href={LINKS.youtube} target="_blank" rel="noopener noreferrer">
                 <i className="fa fa-youtube" />
               </a>
               <a href={LINKS.instagram} target="_blank" rel="noopener noreferrer">
@@ -53,5 +54,3 @@ const Footer = () => (
     </footer>
   </div>
 );
-
-export default Footer;

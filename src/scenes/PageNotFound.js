@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PageNotFound = () => (
+export default () => (
   <section className="page404 jumbotron bg-dark pt-5 text-center">
     <div className="pt-5 pb-5 text-white">
       <h3>404 page not found</h3>
@@ -8,4 +8,3 @@ const PageNotFound = () => (
     </div>
   </section>
 );
-export default PageNotFound;

@@ -4,6 +4,8 @@ import bizplan from '../_files/BusinessPlan.pdf';
 const baseURL = 'https://firebasestorage.googleapis.com/v0/b/personal-website-5e1cc.appspot.com/o/images%2F';
 
 export const IMAGES = {
+  activision: `${baseURL}activision.jpg?alt=media&token=23b033d9-ee27-4edc-a4b2-b6daa0178c64`,
+  algoswitch: `${baseURL}algoswitch.png?alt=media&token=cd2bdced-6e15-4121-8156-467356436f03`,
   altalova: `${baseURL}altalova.png?alt=media&token=6eefd113-59b4-4eb2-900a-7a572e770f48`,
   andrewmf: `${baseURL}Fandrewmf.png?alt=media&token=50081056-6d55-4a7f-8d01-b62200002e63`,
   app: `${baseURL}app.png?alt=media&token=6cea54cb-f767-4d64-8371-7d33fd40441b`,
@@ -16,6 +18,7 @@ export const IMAGES = {
   coinglomerate: `${baseURL}coinglomerate.png?alt=media&token=4099fbd7-6a57-4a48-b440-b530919bcaee`,
   coinglomeratesite: `${baseURL}coinglomeratesite.png?alt=media&token=cddbd065-5e1e-44d0-89c7-355ff55e46ca`,
   contact: `${baseURL}contact.png?alt=media&token=1dcd5aee-a3da-41b1-91cb-d501d34fda9c`,
+  cryptobot: `${baseURL}cryptobot.png?alt=media&token=523a78ce-c480-4aef-b235-9bb9e081e8fd`,
   cryptoCorrelation: `${baseURL}cryptoCorrelation.png?alt=media&token=58f75c71-e65a-470d-9ce8-a0a542e6571e`,
   cse373: `${baseURL}css373.png?alt=media&token=6f38f937-9447-4559-8924-02d1d56f81f2`,
   dubdev: `${baseURL}dubdev.png?alt=media&token=a7c3b144-5578-4679-abd9-4f393a7ef21d`,

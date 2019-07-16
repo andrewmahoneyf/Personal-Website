@@ -4,26 +4,27 @@ module.exports = {
   env: {
     browser: true,
     node: true,
-    jest: true
+    jest: true,
   },
   rules: {
     'import/no-extraneous-dependencies': [
       'error',
       {
-        devDependencies: ['*', 'test/**/*']
-      }
+        devDependencies: ['*', 'test/**/*'],
+      },
     ],
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'no-plusplus': ['off'],
     'import/no-unresolved': 'off',
+    'import/prefer-default-export': 'off',
     'prettier/prettier': [
       'error',
       {
-        printWidth: 240,
+        printWidth: 120,
         singleQuote: true,
         tabWidth: 2,
-        trailingComma: 'es5'
-      }
-    ]
-  }
+        trailingComma: 'es5',
+      },
+    ],
+  },
 };

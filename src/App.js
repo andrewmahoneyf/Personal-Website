@@ -15,7 +15,7 @@ import 'scripts/smoothScroll';
 const App = () => (
   <div className="App">
     <header id="navigation" role="navigation">
-      <Navigation />
+      <Navigation key={window.location} />
     </header>
     <Main />
     <Footer id="footer" role="contentinfo" />

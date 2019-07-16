@@ -1,13 +1,12 @@
 import React from 'react';
 
 import Header from 'components/Header';
-import Job from 'components/Job';
+import Jobs from 'components/Jobs';
 
-import { POSITIONS } from 'constants/positions';
 import { FILES } from 'constants/assets';
 import { LINKS } from 'constants/routes';
 
-const Experience = () => (
+export default () => (
   <main className="experience">
     <Header
       headline="Andrew's Work Experience"
@@ -23,14 +22,3 @@ const Experience = () => (
     </section>
   </main>
 );
-
-const Jobs = () => (
-  <div className="row pt-0">
-    {POSITIONS.map(job => (
-      <Job key={job.company} company={job.company} date={job.date} position={job.position} url={job.url} image={job.image} desc={job.desc} />
-    ))}
-  </div>
-);
-
-export default Experience;
-export { Jobs };
