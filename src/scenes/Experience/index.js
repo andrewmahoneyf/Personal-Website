@@ -3,8 +3,7 @@ import React from 'react';
 import Header from 'components/Header';
 import Jobs from 'components/Jobs';
 
-import { FILES } from 'constants/assets';
-import { LINKS } from 'constants/routes';
+import { FILES, LINKS } from 'assets';
 
 export default () => (
   <main className="experience">

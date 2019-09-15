@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { IMAGES, FILES } from 'constants/assets';
-import { ROUTES, LINKS } from 'constants/routes';
+import { IMAGES, FILES, LINKS } from 'assets';
+import ROUTES from 'routes';
 
 export default () => (
   <section id="top" className="box-shadow">
@@ -17,8 +17,8 @@ export default () => (
           <img className="first-slide" src={IMAGES.carousel1} alt="First slide" />
           <div className="container">
             <div className="carousel-caption d-md-block text-right slide1">
-              <h1>ANDREW MAHONEY-FERNANDES</h1>
-              <p className="dnone">
+              <h2>ANDREW MAHONEY-FERNANDES</h2>
+              <p className="d-none d-md-inline-block">
                 <i>University of Washington | Michael G. Foster School of Business 2019</i>
               </p>
               <p>
@@ -47,12 +47,12 @@ export default () => (
           <img className="second-slide" src={IMAGES.carousel2} alt="Second slide" />
           <div className="container">
             <div className="carousel-caption d-md-block slide2">
-              <h1>Full-Stack Engineer</h1>
-              <p>A business-minded individual with a passion for technology</p>
+              <h2>Full-Stack Engineer</h2>
+              <p>React specialist dedicated to JavaScript focused stacks</p>
               <p>
-                <a className="btn btn-lg btn-primary box-shadow" href={ROUTES.about} role="button">
-                  Learn more
-                </a>
+                <Link className="btn btn-lg btn-primary box-shadow" to={ROUTES.portfolio} role="button">
+                  Check out Andrew&apos;s Portfolio
+                </Link>
               </p>
             </div>
           </div>
@@ -60,13 +60,13 @@ export default () => (
         <div className="carousel-item">
           <img className="third-slide" src={IMAGES.carousel3} alt="Third slide" />
           <div className="container">
-            <div className="carousel-caption d-md-block text-left slide3">
-              <h1>Cumulative Programming Experience:</h1>
-              <p>Java, JavaScript, SQL, C#, PHP, HTML5, CSS3, Android, BASH, React, Git, and more to come!</p>
+            <div className="carousel-caption d-md-block slide3">
+              <h2>Blockchain Enthusiast</h2>
+              <p>A business-minded individual with a passion for technology</p>
               <p>
-                <Link className="btn btn-lg btn-primary box-shadow" to={ROUTES.portfolio} role="button">
-                  Check out Andrew&apos;s Portfolio
-                </Link>
+                <a className="btn btn-lg btn-primary box-shadow" href={ROUTES.about} role="button">
+                  Learn more
+                </a>
               </p>
             </div>
           </div>

@@ -1,0 +1,256 @@
+@import '_variables';
+/* ==========================================================================
+Navbar
+========================================================================== */
+.navbar {
+  padding: 0 !important;
+  height: 75px;
+  border-radius: 0 0 20px 20px;
+  font-size: 1.5rem;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .navbar-right .nav-link {
+    background-color: transparent !important;
+  }
+
+  .nav-link {
+    color: $blue !important;
+  }
+
+  #navbarCollapse {
+    clear: both;
+  }
+
+  .transparent {
+    background-color: rgba(0, 0, 0, 0) !important;
+  }
+}
+
+/* ==========================================================================
+Carousel
+========================================================================== */
+.carousel {
+  margin-bottom: 4rem;
+
+  .carousel-item {
+    height: 100vh;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 100vh;
+    }
+
+    img.second-slide,
+    img.third-slide {
+      max-width: 100%;
+      overflow: hidden;
+    }
+
+    .carousel-caption {
+      z-index: 10;
+      bottom: 3rem;
+    }
+
+    .slide1 {
+      top: 15%;
+    }
+
+    .slide2 {
+      top: 35%;
+      background: rgba(3, 5, 40, 0.7);
+      height: 125px;
+      border-radius: 5px;
+    }
+
+    .slide3 {
+      top: 25%;
+      background: rgba(3, 5, 40, 0.7);
+      height: 125px;
+      width: 500px;
+      max-width: 75%;
+      border-radius: 5px;
+      transform: rotate(-20deg);
+    }
+  }
+}
+
+/* ==========================================================================
+Header
+========================================================================== */
+.jumbotron {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-bottom: 0;
+  border-radius: 0 0 20px 20px;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  .jumbotron-heading {
+    font-weight: 300;
+  }
+
+  .container {
+    max-width: 40rem;
+  }
+
+  .fadeIn {
+    animation-duration: 3s;
+    -vendor-animation-duration: 3s;
+    animation-delay: 0.5s;
+    -vendor-animation-delay: 0.5s;
+  }
+}
+
+/* ==========================================================================
+Home Page
+========================================================================== */
+main.home {
+  background-color: darkgrey;
+
+  hr {
+    margin: 5% 3%;
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+
+  section#jobs {
+    color: $black;
+
+    .jobs-hr {
+      margin: 0;
+      height: 15px;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  section#about {
+    background: $black;
+
+    .container {
+      max-width: 960px;
+    }
+
+    .video {
+      margin-top: 5%;
+      justify-content: space-around;
+    }
+  }
+}
+
+/* ==========================================================================
+Jobs
+========================================================================== */
+.rounded-circle {
+  margin-bottom: 5px;
+  background: $black;
+  transition: transform 0.8s ease-in-out;
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+
+  &:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.job {
+  margin-bottom: 1.5rem;
+  text-align: center;
+
+  p {
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+  }
+}
+
+.nowrap div {
+  flex-wrap: nowrap;
+  overflow: scroll;
+  overflow-x: scroll;
+  justify-content: unset;
+  background-color: $grey;
+  padding-top: 3%;
+}
+
+/* ==========================================================================
+Portfolio
+========================================================================== */
+.album {
+  min-height: 50rem;
+  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 33%;
+  padding: 0.75rem;
+  margin: 1px;
+  border: 0;
+  border-radius: 0;
+  background-color: $grey;
+
+  transition: all 200ms ease-in;
+  -webkit-transition: all 200ms ease-in;
+  -ms-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -moz-transform: scale(1);
+
+  &:hover {
+    box-shadow: 0px 0px 150px $black;
+    transform: scale(1.13);
+    -webkit-transform: scale(1.13);
+    -ms-transform: scale(1.13);
+    -moz-transform: scale(1.13);
+    z-index: 2;
+  }
+
+  .cardLink:hover {
+    text-decoration: none;
+  }
+
+  .cardImg {
+    margin-bottom: 0.75rem;
+    height: 280px;
+    width: 100%;
+    display: block;
+  }
+}
+
+/* ==========================================================================
+Contact & Footer section
+========================================================================== */
+footer {
+  .gridContainer {
+    border-radius: 20px 20px 0 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  #contactForm {
+    width: 100%;
+
+    .msg-box {
+      height: 100px;
+      width: 100%;
+      margin: 1em 0;
+      border: 0;
+      border-radius: 3px;
+    }
+
+    .alert {
+      display: none;
+    }
+  }
+}

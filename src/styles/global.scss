@@ -1,0 +1,50 @@
+@import '_variables';
+/* ==========================================================================
+Global
+========================================================================== */
+html {
+  background-color: $dark-grey;
+  font-size: 13px;
+  overflow-x: hidden;
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: $black;
+    color: $grey;
+    overflow-x: hidden;
+
+    h1 {
+      font-size: 3.75rem;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -0.05rem;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    a {
+      color: $blue;
+    }
+  }
+}
+
+/* Extra Utils */
+
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.5);
+}
+
+.clear {
+  clear: both;
+}
+
+.row {
+  justify-content: center;
+}
+
+.btn-primary {
+  background-color: $blue;
+}

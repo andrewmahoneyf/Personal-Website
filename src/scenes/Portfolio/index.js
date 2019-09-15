@@ -3,10 +3,9 @@ import React from 'react';
 import Card from 'components/Card';
 import Header from 'components/Header';
 
-import { PROJECTS } from 'constants/projects';
-import { LINKS } from 'constants/routes';
+import { PROJECTS, LINKS } from 'assets';
 
-const Portfolio = () => (
+export default () => (
   <main role="main" className="projects">
     <Header
       headline="Andrew's Portfolio"
@@ -17,20 +16,10 @@ const Portfolio = () => (
       secondaryBtn="View LinkedIn"
       secondaryURL={LINKS.linkedin}
     />
-    <ProjectsGroup />
+    <div className="album animated slideInUp">
+      {PROJECTS.map(project => (
+        <Card key={project.url} url={project.url} image={project.image} desc={project.desc} />
+      ))}
+    </div>
   </main>
 );
-
-const ProjectsGroup = () => (
-  <div className="album text-muted animated slideInUp">
-    <div className="container-fluid pr-5 pl-5">
-      <div className="row">
-        {PROJECTS.map(project => (
-          <Card key={project.url} url={project.url} image={project.image} desc={project.desc} />
-        ))}
-      </div>
-    </div>
-  </div>
-);
-
-export default Portfolio;

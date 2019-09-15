@@ -4,13 +4,15 @@ import { Route, Redirect, Switch } from 'react-router-dom';
 import Home from 'scenes/Home';
 import Experience from 'scenes/Experience';
 import Portfolio from 'scenes/Portfolio';
-import PageNotFound from 'scenes/PageNotFound';
 
-import Navigation from 'components/Navigation';
+import PageNotFound from 'components/404';
+import Navigation from 'components/Navbar';
 import Footer from 'components/Footer';
 
-import 'scripts/navbar';
-import 'scripts/smoothScroll';
+import ROUTES from 'routes';
+
+import 'utils/navbar';
+import 'utils/smoothScroll';
 
 const App = () => (
   <div className="App">
@@ -26,11 +28,11 @@ const App = () => (
 const Main = () => (
   <main id="top">
     <Switch>
-      <Route exact path="/" component={Home} />
-      <Route path="/experience" component={Experience} />
-      <Route path="/portfolio" component={Portfolio} />
-      <Route path="/404" component={PageNotFound} />
-      <Redirect to="/404" />
+      <Route exact path={ROUTES.home} component={Home} />
+      <Route path={ROUTES.experience} component={Experience} />
+      <Route path={ROUTES.portfolio} component={Portfolio} />
+      <Route path={ROUTES.error} component={PageNotFound} />
+      <Redirect to={ROUTES.error} />
     </Switch>
   </main>
 );
