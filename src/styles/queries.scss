@@ -21,22 +21,13 @@ Media Queries
       padding-right: 1em;
     }
   }
-  .nowrap {
-    padding: 0 !important;
-  }
-  .carousel {
-    margin-bottom: 0;
-  }
 }
 @media (max-width: 768px) {
-  .transparent {
-    background-color: $dark-grey !important;
-  }
   .navbar {
     transition: none;
-    #navbarCollapse.navbar-collapse.collapse {
-      background-color: $dark-grey !important;
-    }
+    // #navbarCollapse.navbar-collapse.collapse {
+    //   background-color: $dark-grey !important;
+    // }
     .navbar-brand {
       padding-top: 0.75em;
     }
@@ -62,13 +53,12 @@ Media Queries
     width: 100%;
   }
   .job {
-    min-width: 75% !important;
+    min-width: 100% !important;
   }
   h1 {
     font-size: 3rem !important;
   }
   .carousel {
-    margin-bottom: 0rem !important;
     h2 {
       font-size: 1.5rem;
     }

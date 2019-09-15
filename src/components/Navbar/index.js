@@ -7,11 +7,7 @@ import ROUTES from 'routes';
 const Navbar = ({ location }) => {
   const hideHome = ['/experience', '/portfolio', '/404'].includes(location.pathname);
   return (
-    <nav
-      className="navbar navbar-expand-md navbar-dark fixed-top transparent"
-      data-toggle="collapse"
-      data-target="#navbarCollapse"
-    >
+    <nav className="navbar navbar-expand-md navbar-dark fixed-top" data-toggle="collapse" data-target="#navbarCollapse">
       <Link className="navbar-brand pl-4" to={ROUTES.home}>
         AndrewMF
       </Link>

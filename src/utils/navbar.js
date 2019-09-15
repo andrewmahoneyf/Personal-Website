@@ -1,13 +1,18 @@
 import $ from 'jquery';
 
-// transparent scrollbar
-$(window).scroll(function() {
-  if ($(document).scrollTop() > 50) {
-    $('.navbar-dark').removeClass('transparent');
-    $('.navbar-dark').addClass('bg-dark');
+// transparent scrollbar for larger devices
+$(document).ready(function() {
+  if ($(window).width() >= 768) {
+    $(window).scroll(function() {
+      if ($(document).scrollTop() > 50) {
+        $('.navbar-dark').addClass('bg-dark');
+      } else {
+        $('.navbar-dark').removeClass('bg-dark');
+      }
+    });
   } else {
-    $('.navbar-dark').addClass('transparent');
-    $('.navbar-dark').removeClass('bg-dark');
+    $('.navbar-dark').addClass('bg-dark');
+    $('.collapse').addClass('bg-dark');
   }
 });
 
@@ -29,7 +34,7 @@ $('li.dropdown').hover(
   }
 );
 
-// toggle collapse only on small devices
+// toggle collapse only on small devices to remove flashing
 $(document).ready(function() {
   if ($(window).width() >= 768) {
     $('.navbar-collapse').removeAttr('id');

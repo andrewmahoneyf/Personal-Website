@@ -14,8 +14,8 @@ export const Job = ({ company, date, position, url, image, desc }) => (
       <em className="text-muted mb-2">{date}</em>
     </p>
 
-    <p>{desc}</p>
-    <p>
+    <p className="d-none d-md-block">{desc}</p>
+    <p className="d-none d-md-block">
       <a className="btn btn-secondary box-shadow" href={url} role="button" target="_blank" rel="noopener noreferrer">
         View site &raquo;
       </a>
@@ -33,7 +33,7 @@ Job.propTypes = {
 };
 
 export default () => (
-  <div className="row pt-0">
+  <div className="row p-0 p-md-3">
     {POSITIONS.map(job => (
       <Job
         key={job.company}

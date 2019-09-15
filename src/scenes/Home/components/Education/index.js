@@ -5,10 +5,10 @@ import { IMAGES, FILES, LINKS } from 'assets';
 export default () => (
   <div className="row pt-4">
     <div className="col-md-7">
-      <p className="float-left pb-2">
+      <p className="float-left pb-2 w-100 text-center text-md-left">
         <a
           href={LINKS.linkedin}
-          className="btn btn-secondary mr-2 ml-3 ml-md-1 box-shadow"
+          className="btn btn-secondary mr-2 box-shadow"
           target="_blank"
           rel="noopener noreferrer"
         >

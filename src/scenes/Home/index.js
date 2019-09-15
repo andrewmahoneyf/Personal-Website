@@ -11,9 +11,9 @@ import Interests from './components/Interests';
 export default () => (
   <main className="home">
     <Carousel />
-    <section id="jobs" className="container-fluid nowrap pl-5 pr-5 pb-md-4">
+    <section id="jobs" className="container-fluid nowrap p-0 p-md-5">
       <Jobs />
-      <hr className="jobs-hr" />
+      <hr className="jobs-hr d-none d-md-block" />
     </section>
     <section id="about">
       <div className="container pt-md-5">

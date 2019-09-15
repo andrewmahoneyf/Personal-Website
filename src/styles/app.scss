@@ -14,20 +14,13 @@ Navbar
     font-size: 1.5rem;
   }
 
-  .navbar-right .nav-link {
-    background-color: transparent !important;
-  }
-
   .nav-link {
     color: $blue !important;
   }
 
   #navbarCollapse {
     clear: both;
-  }
-
-  .transparent {
-    background-color: rgba(0, 0, 0, 0) !important;
+    border-radius: 0 0 20px 20px;
   }
 }
 
@@ -35,8 +28,6 @@ Navbar
 Carousel
 ========================================================================== */
 .carousel {
-  margin-bottom: 4rem;
-
   .carousel-item {
     height: 100vh;
 
@@ -115,7 +106,7 @@ Header
 Home Page
 ========================================================================== */
 main.home {
-  background-color: darkgrey;
+  background-color: $dark-grey;
 
   hr {
     margin: 5% 3%;
@@ -123,7 +114,16 @@ main.home {
   }
 
   section#jobs {
-    color: $black;
+    div {
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      justify-content: start;
+      background-color: $black;
+
+      .job {
+        margin: auto;
+      }
+    }
 
     .jobs-hr {
       margin: 0;
@@ -147,7 +147,7 @@ main.home {
 }
 
 /* ==========================================================================
-Jobs
+Jobs / Experience
 ========================================================================== */
 .rounded-circle {
   margin-bottom: 5px;
@@ -162,22 +162,22 @@ Jobs
 }
 
 .job {
-  margin-bottom: 1.5rem;
   text-align: center;
+}
+
+.experience {
+  .d-none {
+    display: block !important;
+  }
+
+  .job {
+    margin-bottom: 1.5rem;
+  }
 
   p {
     margin-right: 0.75rem;
     margin-left: 0.75rem;
   }
-}
-
-.nowrap div {
-  flex-wrap: nowrap;
-  overflow: scroll;
-  overflow-x: scroll;
-  justify-content: unset;
-  background-color: $grey;
-  padding-top: 3%;
 }
 
 /* ==========================================================================
@@ -196,7 +196,7 @@ Portfolio
   margin: 1px;
   border: 0;
   border-radius: 0;
-  background-color: $grey;
+  background-color: $dark-grey;
 
   transition: all 200ms ease-in;
   -webkit-transition: all 200ms ease-in;
